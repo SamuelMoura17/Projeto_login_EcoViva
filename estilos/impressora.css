@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* Configurações para a tela deitada */
+
+div#container{
+
+    width: 700px;
+    height: 500px;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    backdrop-filter: blur(2px);
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+    padding: 40px;
+
+}
+
+h1#h1{
+
+    font-size: 40px;
+
+    padding: 15px;
+    
+    margin-top: -45px;
+
+}
+
+div#contfoto > img{
+
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+
+    top: 10%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+form{
+
+    width: 80%;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    position: absolute;
+
+    bottom: 13%;
+    left: 50%;
+
+    transform: translateX(-37%);
+
+}
+
+
+input.imput{
+
+    width: 67%;
+
+    background-color: rgba(0, 80, 0, 0.3);
+
+    border: 1px solid rgba(0, 200, 0, 0.4);  
+
+    padding: 15px;
+
+    margin-top: 5px;
+    margin-bottom: 25px;
+    
+    display: block;
+
+    border-radius: 15px;
+
+    color: rgb(0, 0, 0);;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+label{
+
+    color: black;
+
+}
+
+div#inputenv > input{
+
+    width: 73%;
+
+    border-radius: 15px;
+
+    background-color: #6BAF7A;;
+
+    padding: 20px;
+
+    color: rgb(0, 0, 0);
+
+}
+
+p#esqueceu{
+
+    color: rgb(0, 0, 0);
+
+}
+
+hr{
+
+    width: 69%;
+    height: 0.8px;
+
+    border: 0.5px solid #6BAF7A;
+
+    background-color: #6BAF7A;
+
+    position: absolute;
+
+    bottom: -2%;
+
+}
+
+p#criar{ 
+
+    margin-top: 45px;
+
+    color: rgb(0, 0, 0);
+
+    font-family: "Inter", sans-serif;
+
+    position: absolute;
+
+    left: 37%;
+    transform: translateX(-50%);
+
+    font-size: small;
+
+}

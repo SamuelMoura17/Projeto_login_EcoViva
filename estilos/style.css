@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+/* Fonte Cormorant Garamond - font-family: "Cormorant Garamond", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fonte Inter - font-family: "Inter", sans-serif; */
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+
+    height: 100vh;
+
+    background: black url('../imagens/ilke-yazgan-a8b6zP1wEDQ-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+h1#h1{
+
+    text-align: center;
+
+    padding: 10px;
+
+    color: aliceblue;
+
+    font-family: "Cormorant Garamond", serif;
+
+}
+
+strong{
+
+    color: #6BAF7A;
+
+}
+
+strong:hover{
+
+    color: #fff;
+
+}
+
+div#contfoto > img{
+
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+
+}
+
+label{
+
+    font-family: "Inter", sans-serif;
+
+    color: aliceblue;
+
+    padding: 10px;
+
+}
+
+p#esqueceu{
+
+    font-size: small;
+
+    position: absolute;
+
+    bottom: 31%;
+    left: 50%;
+
+}
+
+a:hover{
+
+    color: #fff;
+
+    text-decoration: underline;
+
+}
+
+a{
+
+    color: #6BAF7A;;
+
+    font-family: "Inter", sans-serif;
+
+    text-decoration: none;
+
+}
+
+
+
+hr{
+
+    width: 69%;
+    height: 0.8px;
+
+    border: 0.5px solid #6BAF7A;
+
+    background-color: #6BAF7A;
+
+    position: absolute;
+
+    bottom: -2%;
+
+}
+
+div#inputenv > input{
+
+    box-shadow: 0 4px 15px rgba(0, 150, 0, 0.4);
+
+}
+
+div#inputenv > input:hover{
+
+    background-color: #3a9e3a;
+
+    transition: background-color 0.3s;
+
+    cursor: pointer;    
+
+    box-shadow: 0 6px 20px rgba(0, 150, 0, 0.6);
+
+}
