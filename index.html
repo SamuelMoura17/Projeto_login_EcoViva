@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/logo-ecoviva.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
     <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
-    <title>Projeto Login Ecoviva</title>
+    <title>Desafio Card de Perfil Responsivo</title>
 </head>
 <body>
 
@@ -24,13 +24,13 @@
 
             </div>
 
-            <form action="cadastro.js" method="get">
+            <form action="cadastro.js" method="get" autocomplete="on">
 
                 <div class="posi">
 
                     <label for="iemail">Email: </label>
 
-                    <input type="text" name="email" id="iemail" placeholder="Digite seu Email" required class="imput">
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu Email" required class="imput" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" autocomplete="additional-name">
 
                 </div class="posi">
 
@@ -38,7 +38,14 @@
 
                     <label for="isenha">Senha: </label>
 
-                    <input type="password" name="senha" id="isenha" placeholder="Digite sua Senha" required class="imput" style="margin-bottom: 50px;">
+
+                    <div class="campo-senha">
+
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua Senha" required class="imput" style="margin-bottom: 50px;" minlength="8" maxlength="20" pattern="(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}" title="A senha deve conter pelo menos 8 caracteres, incluindo letras, números e caracteres especiais." autocomplete="current-password">
+    
+                        <span id="olho" onclick="toggleSenha()">👁️</span>
+
+                    </div>
 
                     <p id="esqueceu">
                         
@@ -63,6 +70,33 @@
         </div>
 
     </main>
+
+    <script>
+
+        function toggleSenha() {
+
+            const isenha = document.getElementById('isenha');
+
+            const olho = document.getElementById('olho');
+
+        
+            if (isenha.type === 'password') {
+
+                isenha.type = 'text';
+
+                olho.textContent = '🙈';
+
+            } else {
+
+                isenha.type = 'password';
+
+                olho.textContent = '👁️';
+
+            }  
+
+        }
+
+    </script>
 
 </body>
 </html>

@@ -68,6 +68,29 @@ label{
 
 }
 
+.campo-senha {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+#olho {
+
+    position: absolute;
+
+    right: 185px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+
+}
+
 p#esqueceu{
 
     font-size: small;
