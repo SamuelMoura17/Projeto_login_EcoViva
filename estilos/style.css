@@ -100,6 +100,8 @@ p#esqueceu{
     bottom: 31%;
     left: 50%;
 
+    color: #6BAF7A;
+
 }
 
 a:hover{
@@ -112,7 +114,7 @@ a:hover{
 
 a{
 
-    color: #6BAF7A;;
+    color: #6BAF7A;
 
     font-family: "Inter", sans-serif;
 
